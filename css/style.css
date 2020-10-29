@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header part start here */
+
+header{
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fffefe !important;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: Source Sans Pro;
+    position: relative;
+    padding: 0;
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+    width: 45%;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 45%;
+}
+.nav-item{
+    padding: 5px 15px;
+}
+.header-content h5, .feature h5, .heading-two h5, .testimonial h5, .pricing h5, .contact h5{
+    color: #008ed6;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Source Sans Pro;
+}
+.header-content{
+    margin-right: 50px;
+}
+.header-content h1{
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: Source Sans Pro;
+    padding: 10px 0px;
+}
+.header-content p, .fh p, .phone-two p, .price p{
+    color: #999999;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Source Sans Pro;
+    padding-bottom: 50px;
+}
+.hg{
+    height: 70vh;
+    position: relative;
+}
+.banner-phone{
+    position: absolute;
+    bottom: -9px;
+    right: 0;
+    transform: translateY(0px);
+}
+.btn-download{
+    background-color: #008ed6;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: .4s all ease-in-out;
+    margin-right: 15px;
+}
+.btn-download:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #008ed6;
+}
+.btn-view{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #008ed6;
+    transition: .4s all ease-in-out;
+}
+.btn-view:hover{
+    background-color: #008ed6;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* header part end here */
+
+/* feature part start here */
+
+.heading{
+    position: relative;
+}
+.feature h1, .heading-two h1, .pricing h1, .contact h1{
+    color: #1a1a1a;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Source Sans Pro;
+    padding: 10px 0px;
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    left: 44%;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: 1s all ease-in-out;
+}
+.feature:hover .heading::before{
+    width: 5%;
+}
+.heading::after{
+    content: '';
+    position: absolute;
+    right: 44%;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: 1s all ease-in-out;
+}
+.feature:hover .heading::after{
+    width: 5%;
+}
+.icon{
+    height: 100px;
+    width: 100px;
+    color: #008ed6;
+    text-align: center;
+    line-height: 100px;
+    font-size: 35px;
+    margin: auto;
+    border: 1px solid #999999;
+    border-radius: 50%;
+}
+h3{
+    font-size: 25px;
+    font-weight: 400;
+    color: #1a1a1a;
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+.heading-two{
+    position: relative;
+}
+.heading-two::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.heading-two::after{
+    content: '';
+    position: absolute;
+    right: 91%;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: .4s all ease-in-out;
+}
+.phone-two:hover .heading-two::before{
+    width: 4%;
+}
+.phone-two:hover .heading-two::after{
+    width: 4%;
+}
+.phone-two ul{
+    list-style: none;
+    margin: 0;
+}
+.phone-two ul li{
+    margin: 5px 0;
+    color: #131212;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Source Sans Pro;
+    text-transform: capitalize;
+}
+.phone-two ul li i{
+    margin-right: 10px;
+    font-size: 18px;
+    color: #008ed6;
+}
+
+/* feature part end here */
+
+/* super part start here */
+
+.super{
+    background-color: #f2f2f2;
+}
+.super:hover .heading-two::before{
+    width: 4%;
+}
+.super:hover .heading-two::after{
+    width: 4%;
+}
+
+/* super part end here */
+
+/* testimonial part start here */
+
+.testimonial h1{
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: Source Sans Pro;
+    padding: 5px 0px;
+}
+.testimonial{
+    background-image: url(../images/testimonial.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+}
+.heading::before{
+    content: '';
+    position: absolute;
+    left: 44%;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: 1s all ease-in-out;
+}
+.testimonial:hover .heading::before{
+    width: 5%;
+}
+.heading::after{
+    content: '';
+    position: absolute;
+    right: 44%;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background-color: #008ed6;
+    transition: 1s all ease-in-out;
+}
+.testimonial:hover .heading::after{
+    width: 5%;
+}
+.testimonial p{
+    color: #ffffff;
+    font-size: 22px;
+    font-style: italic;
+    font-family: Source Sans Pro;
+    padding-bottom: 50px;
+}
+.client{
+    display: flex;
+    padding-left: 15px;
+}
+.desig{
+    margin-left: 20px;
+}
+.desig h6{
+    font-size: 16px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 0;
+}
+.desig h5{
+    font-size: 18px;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* testimonial part end here */
+
+/* notification part start here */
+.notification{
+    background-color: rgb(31, 30, 30);
+    padding: 50px;
+}
+.notification h2{
+    font-size: 34px;
+    color: #ffffff;
+    font-family: Source Sans Pro;
+    font-weight: lighter;
+}
+.notification span{
+    font-size: 34px;
+    color: #ffffff;
+    font-family: Source Sans Pro;
+    font-weight: 500;
+}
+
+/* notification part end here */
+
+/* pricing start here */
+
+.pricing{
+    background-color: #ffffff;
+    padding-bottom: 50px;
+}
+.pricing:hover .heading::before{
+    width: 5%;
+}
+.pricing:hover .heading::after{
+    width: 5%;
+}
+.price h3{
+    font-size: 22px;
+    font-family: Source Sans Pro;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    border-bottom: 1px solid  #ccc;
+    padding: 15px 0;
+    transition: .4s all ease-in-out;
+    margin: 0;
+}
+.price{
+    border: 1px solid #ccc;
+    text-align: center;
+}
+sup{
+    font-size: 30px;
+}
+.price h1{
+    font-size: 60px;
+    font-family: Source Sans Pro;
+    transition: .4s all ease-in-out;
+}
+.price h6{
+    color: #999999;
+    font-size: 18px;
+    text-transform: none;
+    font-weight: 400;
+    font-family: Source Sans Pro;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    transition: .4s all ease-in-out;
+}
+.price p span{
+    color: #09a5f3;
+}
+.price p{
+    padding: 20px 10px;
+}
+.btn-order{
+    background-color: #ffffff;
+    color: #008ed6;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .4s all ease-in-out;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.price:hover .btn-order{
+    background-color:  #008ed6;
+    color: #fff;
+}
+.price:hover h3{
+    color:  #008ed6;
+}
+.value{
+    transition: .4s all ease-in-out;
+}
+.price:hover .value{
+    background-color:  #008ed6;
+}
+.price:hover .value h1{
+    color: #ffffff;
+}
+.price:hover .value h6{
+    color: #ffffff;
+}
+
+/* pricing end here */
+
+/* contact + map start here */
+
+.contact{
+    background-color: #ededed;
+}
+.contact:hover .heading::before{
+    width: 5%;
+}
+.contact:hover .heading::after{
+    width: 5%;
+}
+.contact h6{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Source Sans Pro;
+    margin: 0;
+}
+.contact-icon{
+    height: 70px;
+    width: 70px;
+    color: #008ed6;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    margin: auto;
+}
+.form-bg{
+    background-color: black;
+    padding: 60px;
+}
+.form-control {
+    background-color: transparent;
+    border: 1px solid #434344;
+}
+.btn-submit{
+    background: no-repeat;
+    border: none;
+    background-color: transparent;
+    color: #008ed6;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .4s all ease-in-out;
+    border: 1px solid#008ed6;
+    padding: 10px 30px;
+    border-radius: 5px;
+    float: right;
+}
+.btn-submit:hover{
+    background-color:  #008ed6;
+    color: #fff;
+}
+.contact{
+    position: relative;
+    padding-bottom: 300px;
+}
+.abs{
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    width: 100%;
+}
+input::placeholder{
+    color:  #434344 !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+textarea{
+    padding-bottom: 18px !important;
+}
+textarea::placeholder{
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#434344 !important;
+}
+
+/* contact + map end here */
+
+/* footer start here */
+
+footer{
+    background-color: black;
+    padding: 40px;
+}
+.footer-icon ul{
+    list-style: none;
+    display: flex;
+}
+.footer-icon ul li{
+    float: left;
+    font-size: 18px;
+    margin-left: 32px;
+}
+.footer-icon p{
+    font-size: 14px;
+    font-family: Source Sans Pro;
+    color: #636264;
+    text-transform: uppercase;
+}
+.footer-icon ul li a{
+    color: #444348;
+}
+.footer-icon ul li a:hover{
+    color: #008ed6;
+}
+
+/* footer end here */
